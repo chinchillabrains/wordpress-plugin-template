@@ -25,10 +25,6 @@ if ( ! class_exists( 'Chilla_Plugin_Template' ) ) {
         protected static $instance = null;
 
         public function __construct() {
-            if ( ! class_exists( 'WooCommerce' ) ) {
-                return;
-            }
-
 
             // Load translation files
             // add_action( 'init', array( $this, 'add_translation_files' ) );
